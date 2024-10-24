@@ -1,0 +1,47 @@
+body {
+    background-image: url("Renders/Room.png");
+    height: 100%;
+    width: 100%;
+  }
+
+#buttons {
+    position: relative;
+    top: 12rem;
+    bottom: -5rem;
+}
+
+.audiobutton {
+    background-color: black;
+    appearance: none;
+    border: none;
+    height: 40%;
+    width: 25%;
+    position: relative;
+    z-index: 1;
+}
+
+.photobutton {
+    appearance: none;
+    border: none;
+    height: 40%;
+    width: 25%;
+    padding-right: 5%;
+    z-index: 2;
+}
+
+.blenderbutton {
+    appearance: none;
+    border: none;
+    height: 40%;
+    width: 25%;
+    z-index: 2;
+}
+
+.videobutton {
+    appearance: none;
+    border: none;
+    height: 40%;
+    width: 25%;
+    position: relative;
+    z-index: 1;
+}
