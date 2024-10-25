@@ -1,22 +1,44 @@
 body {
     background-image: url("Renders/Room.png");
     height: 100%;
-    width: 100%;
-  }
+    width: auto;
+}
 
-#buttons {
+header {
+    width: 100%;
+    height: initial;
     position: relative;
-    top: 12rem;
-    bottom: -5rem;
+}
+
+.buttons1 {
+    display: grid;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+}
+
+.buttons2 {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    left: 30%;
 }
 
 .audiobutton {
-    background-color: black;
     appearance: none;
     border: none;
     height: 40%;
     width: 25%;
-    position: relative;
+    position: absolute;
+    left: 5rem;
     z-index: 1;
 }
 
@@ -25,7 +47,9 @@ body {
     border: none;
     height: 40%;
     width: 25%;
-    padding-right: 5%;
+    position: relative;
+    left: 22rem;
+    padding-right: 6rem;
     z-index: 2;
 }
 
@@ -34,14 +58,18 @@ body {
     border: none;
     height: 40%;
     width: 25%;
+    position: relative;
+    left: 20rem;
     z-index: 2;
 }
 
 .videobutton {
     appearance: none;
     border: none;
+    display: inline-block;
     height: 40%;
     width: 25%;
     position: relative;
+    left: 14rem;
     z-index: 1;
 }
