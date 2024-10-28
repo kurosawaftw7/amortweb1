@@ -1,12 +1,12 @@
 body {
-    background-image: url("Renders/Room.png");
+    background-image: url("Renders/Room2.png");
     height: 100%;
     width: auto;
 }
 
 header {
     width: 100%;
-    height: initial;
+    height: 100%;
     position: relative;
 }
 
@@ -29,7 +29,7 @@ header {
     height: 100%;
     width: 50%;
     position: relative;
-    left: 30%;
+    left: 40rem;
 }
 
 .audiobutton {
@@ -42,6 +42,11 @@ header {
     z-index: 1;
 }
 
+.audiobutton:hover {
+    background-image: url(Renders/0001.png);
+    z-index: 2;
+}
+
 .photobutton {
     appearance: none;
     border: none;
@@ -50,7 +55,12 @@ header {
     position: absolute;
     left: 22rem;
     padding-right: 6rem;
-    z-index: 2;
+    z-index: 3;
+}
+
+.photobutton:hover {
+    background-image: url(Renders/0002.png);
+    z-index: 3;
 }
 
 .blenderbutton {
@@ -60,7 +70,12 @@ header {
     width: 25%;
     position: relative;
     left: 14rem;
-    z-index: 2;
+    z-index: 4;
+}
+
+.blenderbutton:hover {
+    background-image: url(Renders/0003.png);
+    z-index: 4;
 }
 
 .videobutton {
@@ -69,6 +84,11 @@ header {
     height: 40%;
     width: 25%;
     position: absolute;
-    left: 30rem;
-    z-index: 1;
+    left: 34rem;
+    z-index: 2;
+}
+
+.videobutton:hover {
+    background-image: url(Renders/0004.png);
+    z-index: 3;
 }
