@@ -1,10 +1,12 @@
 body {
-    background-image: url("Renders/Room2.png");
+    background-image: url("web graphics/Room3.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    min-width: 800px;
     min-height: 100vh;
     width: auto;
+    overflow-x: hidden;
 }
 
 header {
@@ -13,28 +15,111 @@ header {
     position: relative;
 }
 
+.buttonsall {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* box-sizing: border-box;
+    resize: both;
+    overflow: auto;
+    min-width: 800px;
+    width: auto;
+    aspect-ratio: 16/9;
+    height: calc(100vh); */
+}
+
+div {
+    aspect-ratio: auto;
+}
+
+.buttons1, .buttons2 {
+    position: absolute;
+    top: 30vh;
+    height: auto;
+    /* min-height: calc(var(--vh) * 4); */
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    /* min-width: auto; */
+}
+
 .buttons1 {
+    left: 5vw;
+}
+
+.buttons2 {
+    left: 40vw;
+}
+
+/* .buttons1 {
     margin-left: auto;
     margin-right: auto;
-    min-height: 100%;
-    width: 50%;
-    position: fixed;
+    /* min-height: 100%; */
+    /* width: 50%; */
+    /* position: fixed;
     top: 15rem;
-}
+    min-height: calc(var(--vh) * 4);
+    width: calc(var(--vw) * 3);
+    min-width: auto; */
+    /* aspect-ratio: 16/9; */
+/* }
 
 .buttons2 {
     display: inline-grid;
     grid-template-columns: 1fr 1fr;
     margin-left: auto;
     margin-right: auto;
-    min-height: 100%;
-    width: 50%;
-    position: fixed;
+    /* min-height: 100%;
+    width: 50%; */
+    /* position: fixed;
     top: 15rem;
     left: 40rem;
+    min-height: calc(var(--vh) * 4);
+    width: calc(var(--vw) * 3);
+    min-width: auto;
+}  */
+
+.audiobutton, .photobutton, .blenderbutton, .videobutton {
+    appearance: none;
+    border: none;
+    height: 35vh;  /* Changed to viewport height */
+    width: 20vw;   /* Changed to viewport width */
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
 }
 
 .audiobutton {
+    left: calc(5vw);    /* Changed from rem to viewport width */
+    z-index: 1;
+}
+
+.photobutton {
+    left: calc(22vw);    /* Changed from rem to viewport width */
+    padding-right: calc(6vw);
+    z-index: 2;
+}
+
+.blenderbutton {
+    left: calc(14vw);    /* Changed from rem to viewport width */
+    z-index: 3;
+}
+
+.videobutton {
+    left: calc(34vw);    /* Changed from rem to viewport width */
+    z-index: 1;
+}
+
+/* .audiobutton {
     appearance: none;
     border: none;
     height: 40%;
@@ -93,4 +178,4 @@ header {
 .videobutton:hover {
     background-image: url(Renders/0004.png);
     z-index: 3;
-}
+} */
