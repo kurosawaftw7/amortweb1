@@ -16,7 +16,7 @@ header {
 }
 
 .buttonsall {
-    position: relative;
+    position: absolute;
     width: 100vw;
     height: 100vh;
     min-width: 800px;
@@ -24,13 +24,6 @@ header {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* box-sizing: border-box;
-    resize: both;
-    overflow: auto;
-    min-width: 800px;
-    width: auto;
-    aspect-ratio: 16/9;
-    height: calc(100vh); */
 }
 
 div {
@@ -47,7 +40,6 @@ div {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2vw;
-    /* min-width: auto; */
 }
 
 .buttons1 {
@@ -58,34 +50,6 @@ div {
     left: 40vw;
 }
 
-/* .buttons1 {
-    margin-left: auto;
-    margin-right: auto;
-    /* min-height: 100%; */
-    /* width: 50%; */
-    /* position: fixed;
-    top: 15rem;
-    min-height: calc(var(--vh) * 4);
-    width: calc(var(--vw) * 3);
-    min-width: auto; */
-    /* aspect-ratio: 16/9; */
-/* }
-
-.buttons2 {
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: auto;
-    margin-right: auto;
-    /* min-height: 100%;
-    width: 50%; */
-    /* position: fixed;
-    top: 15rem;
-    left: 40rem;
-    min-height: calc(var(--vh) * 4);
-    width: calc(var(--vw) * 3);
-    min-width: auto;
-}  */
-
 .audiobutton, .photobutton, .blenderbutton, .videobutton {
     appearance: none;
     border: none;
@@ -95,7 +59,10 @@ div {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transition: transform 0.3s ease;
+}
+
+.audiobutton, .photobutton, .blenderbutton, .videobutton {
+    left: auto;
 }
 
 .audiobutton {
@@ -119,63 +86,55 @@ div {
     z-index: 1;
 }
 
-/* .audiobutton {
-    appearance: none;
-    border: none;
-    height: 40%;
-    width: 25%;
-    position: absolute;
-    left: 5rem;
-    z-index: 1;
-}
 
 .audiobutton:hover {
-    background-image: url(Renders/0001.png);
+    background-image: url(web\ graphics/0001_cropped.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     z-index: 2;
+    filter: brightness(2.0);
+    width: 100%;
+    height: auto;
 }
 
-.photobutton {
-    appearance: none;
-    border: none;
-    height: 40%;
-    width: 25%;
-    position: absolute;
-    left: 22rem;
-    padding-right: 6rem;
-    z-index: 3;
-}
 
 .photobutton:hover {
-    background-image: url(Renders/0002.png);
+    background-image: url(web\ graphics/0002_cropped.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     z-index: 3;
-}
-
-.blenderbutton {
-    appearance: none;
-    border: none;
-    height: 40%;
-    width: 25%;
-    position: relative;
-    left: 14rem;
-    z-index: 4;
+    filter: brightness(2.0);
+    width: 100%;
+    height: auto;
 }
 
 .blenderbutton:hover {
-    background-image: url(Renders/0003.png);
-    z-index: 4;
-}
-
-.videobutton {
-    appearance: none;
-    border: none;
-    height: 40%;
-    width: 25%;
-    position: absolute;
-    left: 34rem;
-    z-index: 2;
+    background-image: url(web\ graphics/0003_cropped.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 3;
+    filter: brightness(2.0);
+    width: 100%;
+    height: auto;
 }
 
 .videobutton:hover {
-    background-image: url(Renders/0004.png);
-    z-index: 3;
-} */
+    background-image: url(web\ graphics/0004_cropped.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    filter: brightness(2.0);
+    width: 100%;
+    height: auto;
+}
+
+.audiobutton:hover::after, .photobutton:hover::after, .blenderbutton:hover::after, .videobutton:hover::after {
+    transform: scale(1.5);
+    z-index: 10;
+    width: 22vw;
+    height: 38vh;
+}
