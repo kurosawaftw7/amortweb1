@@ -90,7 +90,7 @@ div {
 .audiobutton:hover {
     background-image: url(web\ graphics/0001_cropped.png);
     background-size: contain;
-    background-position: left -20%;
+    background-position: left -20% bottom 10rem;
     background-repeat: no-repeat;
     z-index: 2;
     filter: brightness(2.0);
@@ -102,11 +102,11 @@ div {
 .photobutton:hover {
     background-image: url(web\ graphics/0002_cropped.png);
     background-size: contain;
-    background-position: left -20%;
+    background-position: left -20% bottom 10rem;
     background-repeat: no-repeat;
     z-index: 3;
     filter: brightness(2.0);
-    width: 100%;
+    width: 60%;
     height: auto;
 }
 
@@ -117,7 +117,7 @@ div {
     background-repeat: no-repeat;
     z-index: 3;
     filter: brightness(2.0);
-    width: 40%;
+    width: 45%;
     height: auto;
 }
 
