@@ -90,7 +90,7 @@ div {
 .audiobutton:hover {
     background-image: url(web\ graphics/0001_cropped.png);
     background-size: contain;
-    background-position: center;
+    background-position: left -20%;
     background-repeat: no-repeat;
     z-index: 2;
     filter: brightness(2.0);
@@ -102,7 +102,7 @@ div {
 .photobutton:hover {
     background-image: url(web\ graphics/0002_cropped.png);
     background-size: contain;
-    background-position: center;
+    background-position: left -20%;
     background-repeat: no-repeat;
     z-index: 3;
     filter: brightness(2.0);
@@ -113,28 +113,27 @@ div {
 .blenderbutton:hover {
     background-image: url(web\ graphics/0003_cropped.png);
     background-size: contain;
-    background-position: center;
+    background-position: left -40%;
     background-repeat: no-repeat;
     z-index: 3;
     filter: brightness(2.0);
-    width: 100%;
+    width: 40%;
     height: auto;
 }
 
 .videobutton:hover {
     background-image: url(web\ graphics/0004_cropped.png);
     background-size: contain;
-    background-position: center;
+    background-position: left -40%;
     background-repeat: no-repeat;
-    z-index: 1;
+    z-index: 2;
     filter: brightness(2.0);
     width: 100%;
     height: auto;
 }
 
 .audiobutton:hover::after, .photobutton:hover::after, .blenderbutton:hover::after, .videobutton:hover::after {
-    transform: scale(1.5);
-    z-index: 10;
+    transform: scale(1.2);
     width: 22vw;
     height: 38vh;
 }
