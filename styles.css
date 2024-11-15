@@ -31,10 +31,9 @@ div {
 }
 
 .buttons1, .buttons2 {
-    position: absolute;
+    position: fixed;
     top: 30vh;
     height: auto;
-    /* min-height: calc(var(--vh) * 4); */
     width: 45vw;
     display: flex;
     justify-content: center;
@@ -56,13 +55,11 @@ div {
     height: 35vh;  /* Changed to viewport height */
     width: 20vw;   /* Changed to viewport width */
     position: absolute;
-    background-size: contain;
+    display: block;
+    max-width: 100%;
+    left: auto;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.audiobutton, .photobutton, .blenderbutton, .videobutton {
-    left: auto;
 }
 
 .audiobutton {
@@ -134,6 +131,7 @@ div {
 
 .audiobutton:hover::after, .photobutton:hover::after, .blenderbutton:hover::after, .videobutton:hover::after {
     transform: scale(1.2);
+    background-size: auto;
     width: 22vw;
     height: 38vh;
 }

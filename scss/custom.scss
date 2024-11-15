@@ -19,3 +19,20 @@
 @import "../node_modules/bootstrap/scss/grid";
 
 // 5. Add additional custom code here
+
+// Breakpoint mixins
+@mixin for-phone-only {
+    @media (max-width: 599px) { @content; }
+  }
+  
+  @mixin for-tablet-portrait {
+    @media (min-width: 600px) and (max-width: 899px) { @content; }
+  }
+  
+  @mixin for-tablet-landscape {
+    @media (min-width: 900px) and (max-width: 1199px) { @content; }
+  }
+  
+  @mixin for-desktop {
+    @media (min-width: 1200px) { @content; }
+  }
