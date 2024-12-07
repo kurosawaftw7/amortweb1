@@ -7,7 +7,7 @@ body {
     min-width: 800px;
     min-height: 100vh;
     width: auto;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 header {
@@ -16,123 +16,89 @@ header {
     position: relative;
 }
 
-.buttonsall {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    min-width: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
 div {
-    aspect-ratio: auto;
+    aspect-ratio: 16/9;
 }
 
 .buttons1, .buttons2 {
-    position: fixed;
-    top: 30vh;
+    position: relative;
+    top: 40%;
     height: auto;
-    width: 45vw;
-    display: flex;
+    width: 45%;
+    display: inline-flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2vw;
 }
 
 .buttons1 {
-    left: 5vw;
+    left: 5%;
 }
 
 .buttons2 {
-    left: 40vw;
+    left: 5%;   
 }
 
 .audiobutton, .photobutton, .blenderbutton, .videobutton {
     appearance: none;
     border: none;
-    height: 35vh;  /* Changed to viewport height */
-    width: 20vw;   /* Changed to viewport width */
-    position: absolute;
-    display: block;
+    height: 35%;
+    width: 20%;
+    position: relative;
     max-width: 100%;
-    left: auto;
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
 }
 
 .audiobutton {
-    left: calc(5vw);    /* Changed from rem to viewport width */
+    left: calc(5%);
     z-index: 1;
 }
 
 .photobutton {
-    left: calc(22vw);    /* Changed from rem to viewport width */
-    padding-right: calc(6vw);
+    left: calc(8%);
     z-index: 2;
 }
 
 .blenderbutton {
-    left: calc(14vw);    /* Changed from rem to viewport width */
+    left: calc(10%);
     z-index: 3;
 }
 
 .videobutton {
-    left: calc(34vw);    /* Changed from rem to viewport width */
-    z-index: 1;
-}
-
-
-.audiobutton:hover {
-    background-image: url(Renders/0001.png);
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
+    left: calc(16%);
     z-index: 2;
-    filter: brightness(3.0);
-    
-    /* height: auto; */
 }
 
-
-.photobutton:hover {
-    background-image: url(Renders/0002.png);
-    /* background-size: cover; */
-    /* background-position: left -20%; */
-    /* background-repeat: no-repeat; */
-    z-index: 3;
-    filter: brightness(3.0);
-    /* height: auto; */
-}
-
-.blenderbutton:hover {
-    background-image: url(Renders/0003.png);
+.audiobutton:hover, .photobutton:hover, .blenderbutton:hover, .videobutton:hover {
     background-size: cover;
-    background-position: left -30%;
-    /* background-repeat: no-repeat; */
-    z-index: 3;
-    filter: brightness(3.0);
-    /* width: 50%; */
-    /* height: auto; */
 }
 
-.videobutton:hover {
-    background-image: url(Renders/0004.png);
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
-    z-index: 2;
-    filter: brightness(3.0);
-    /* height: auto; */
-}
-
-.audiobutton:hover::after, .photobutton:hover::after, .blenderbutton:hover::after, .videobutton:hover::after {
-    transform: scale(2.0);
+#overlay1, #overlay2, #overlay3, #overlay4 {
+    position: fixed;
+    aspect-ratio: 16/9;
+    filter: brightness(2.0);
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0px;
+    right: 0;
+    bottom: 0;
     z-index: 5;
-    position: absolute;
-    background-size: auto, auto;
-    background-attachment: fixed;
     pointer-events: none;
-    inset: 0;
-    object-fit: contain;
+}
+
+&::after {
+    width: auto; 
+    height: auto;
+    z-index: 5;
+    opacity: 0;
+}
+
+#overlay:hover::after {
+    inline-size: (100svw);
+    writing-mode: horizontal-tb;
+    block-size: (100svh);
+    z-index: 5;
+    opacity: 1;
 }

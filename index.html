@@ -13,24 +13,73 @@
         <header>
             <p>Amort Media</p>
         </header>
-        <div class="buttonsall">
-            <div class="buttons1">
-                <a class="audiobutton" href="audio.html">
-                    <img src="Renders/1-alpha-v2.png" alt="audiobutton"/>   
-                </a>
-                <a class="photobutton" href="photo.html">
-                    <img src="Renders/2-alpha-v2.png" alt="audiobutton"/> 
-                </a>
+            <div class="allbuttons">
+                <div class="buttons1">
+                    <div class="image-container">
+                        <a class="audiobutton" href="audio.html" onmouseover="on()" onmouseout="off()">
+                            <img src="Renders/1-alpha-v2.png" alt="Podium for audio">
+                        </a>
+                    </div>
+                    <div id="overlay1" style="display:none;">
+                        <img src="Renders/0001.png" alt="Overlay Image">
+                    </div>
+                    <div class="image-container">
+                        <a class="photobutton" href="photo.html"   onmouseover="on()" onmouseout="off()">
+                            <img src="Renders/2-alpha-v2.png" alt="Podium for photo">
+                        </a>
+                    </div>
+                    <div id="overlay2" style="display:none;">
+                        <img src="Renders/0002.png" alt="Overlay Image">
+                    </div>
+                </div>
+                <div class="buttons2">
+                    <div class="image-container">
+                        <a class="blenderbutton" href="blender.html"  onmouseover="on()" onmouseout="off()">
+                            <img src="Renders/3-alpha-v2.png" alt="Podium for Blender">
+                        </a>
+                    </div>
+                    <div id="overlay3" style="display:none;">
+                        <img src="Renders/0003.png" alt="Overlay Image">
+                    </div>
+                    <div class="image-container">
+                        <a class="videobutton" href="video.html" onmouseover="on()" onmouseout="off()">
+                            <img src="Renders/4-alpha-v2.png" alt="Podium for video">
+                        </a>
+                    </div>
+                    <div id="overlay4" style="display:none;">
+                        <img src="Renders/0004.png" alt="Overlay Image">
+                    </div>
+                </div>
             </div>
-            <div class="buttons2">
-                <a class="blenderbutton" href="blender.html">
-                    <img src="Renders/3-alpha-v2.png" alt="blenderbutton"/>
-                </a>
-                <a class="videobutton" href="video.html">
-                    <img src="Renders/4-alpha-v2.png" alt="videobutton"/>
-                </a>
-            </div>
-        </div>
+            <script>
+                function on() {
+                    document.getElementById("overlay1").style.display = "block";
+                }
+                function off() {
+                    document.getElementById("overlay1").style.display = "none";
+                }
+
+                function on() {
+                    document.getElementById("overlay2").style.display = "block";
+                }
+                function off() {
+                    document.getElementById("overlay2").style.display = "none";
+                }
+
+                function on() {
+                    document.getElementById("overlay3").style.display = "block";
+                }
+                function off() {
+                    document.getElementById("overlay3").style.display = "none";
+                }
+
+                function on() {
+                    document.getElementById("overlay4").style.display = "block";
+                }
+                function off() {
+                    document.getElementById("overlay4").style.display = "none";
+                }
+                </script>
         <footer>
             
         </footer>
