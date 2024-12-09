@@ -5,7 +5,7 @@ body {
     background-size: cover;
     position: relative;
     min-width: 800px;
-    min-height: 100vh;
+    min-height: 100%;
     width: auto;
     overflow: hidden;
 }
@@ -22,7 +22,7 @@ div {
 
 .buttons1, .buttons2 {
     position: relative;
-    top: 40%;
+    top: 36%;
     height: auto;
     width: 45%;
     display: inline-flex;
@@ -34,15 +34,12 @@ div {
     left: 5%;
 }
 
-.buttons2 {
-    left: 5%;   
-}
-
 .audiobutton, .photobutton, .blenderbutton, .videobutton {
     appearance: none;
     border: none;
     height: 35%;
     width: 20%;
+    bottom: 12%;
     position: relative;
     max-width: 100%;
     background-repeat: no-repeat;
@@ -56,17 +53,17 @@ div {
 }
 
 .photobutton {
-    left: calc(8%);
+    left: calc(3%);
     z-index: 2;
 }
 
 .blenderbutton {
-    left: calc(10%);
+    left: calc(12%);
     z-index: 3;
 }
 
 .videobutton {
-    left: calc(16%);
+    left: calc(8%);
     z-index: 2;
 }
 
