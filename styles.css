@@ -71,6 +71,23 @@ div {
     background-size: cover;
 }
 
+.iframe-div1 {
+    display: grid;
+    padding: 2rem;
+}
+
+.iframe-container {
+    display: grid;
+    position: relative;
+    outline-style: outset;
+    outline-color: rgb(46, 44, 44);
+    outline-width: 15px;
+}
+
+.amortmedia_audiolink1 {
+    display: flex;
+}
+
 #overlay1, #overlay2, #overlay3, #overlay4 {
     position: fixed;
     aspect-ratio: 16/9;
