@@ -79,6 +79,8 @@ div {
 .iframe-container {
     display: grid;
     position: relative;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 30% 30% 30%;
     outline-style: outset;
     outline-color: rgb(46, 44, 44);
     outline-width: 15px;
