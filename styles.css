@@ -1,4 +1,4 @@
-body {
+.index-bg {
     background-image: url("web graphics/Room3.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,6 +8,14 @@ body {
     min-height: 100%;
     width: auto;
     overflow: hidden;
+}
+
+.audio-bg {
+    background-image: url("websitestuff/WebsiteBG_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: auto;
 }
 
 header {
@@ -72,21 +80,51 @@ div {
 }
 
 .iframe-div1 {
-    display: grid;
+    display: inline-flex;
+    flex-direction: column;
+    float: left;
+    position: relative;
     padding: 2rem;
 }
 
-.iframe-container {
+.iframe-div2 {
+    display: inline-flex;
+    flex-direction: column;
+    float: right;
+    position: relative;
+    padding: 2rem;
+}
+
+.iframe-div3 {
     display: grid;
     position: relative;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 30% 30% 30%;
+    padding: 2rem;
+
+}
+
+.iframe-container {
+    display: inline-flex;
+    position: relative;
+    align-content: center;
+    outline-style: outset;
+    outline-color: rgb(46, 44, 44);
+    outline-width: 15px;
+}
+
+.neonrogue-container {
+    display: inline-flex;
+    position: relative;
+    align-content: center;
     outline-style: outset;
     outline-color: rgb(46, 44, 44);
     outline-width: 15px;
 }
 
 .amortmedia_audiolink1 {
+    display: flex;
+}
+
+.amortmedia_audiolink2 {
     display: flex;
 }
 
